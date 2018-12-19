@@ -1,6 +1,14 @@
-function takeANumber(line, name){
-  line.push(name);
-  return "Welcome, " + name + ". You are number " + line.length + " in line.";
+// function takeANumber(line, name){
+//   line.push(name);
+//   return "Welcome, " + name + ". You are number " + line.length + " in line.";
+// }
+let counter = 1
+
+function takeANumber(line, number){
+
+  let orderNum = line[line.length-1] + 1;
+  line.push(orderNum);
+  return "Your number is" + orderNum;
 }
 
 function nowServing(katzDeliLine){
